@@ -18,25 +18,17 @@
   margin-left: 20px;
   margin-top: 20px;
   width: 60px;
-  background-color: #F7DC6F;
 }
 
-.col1 {
-  float: left;
-  margin-left: 20px;
-  margin-top: 20px;
-  width: 60px;
-  background-color: #58D68D;
-}
-
-.col2 {
-  float: left;
-  margin-left: 20px;
-  margin-top: 20px;
-  width: 60px;
-  background-color: #5499C7;
-}
-/* Dos columnas de ancho (120px) y un carril (20px) */
-.col1.span2 { width: 140px;}
-/* Tres columnas de ancho (180px) y dos carriles (40px) */
-.col2.span3 { width: 220px; }
+/* Una columna de ancho (60px) sin carril (20px) */
+.col.span1 { width: 60px; background-color: #F7DC6F;}
+/* Dos columnas de ancho (120px) y un carrile (20px)*/
+.col.span2 { width: 140px; background-color: #58D68D;}
+/* Tres columnas de ancho (180px) y dos carriles (40px)*/
+.col.span3 { width: 220px; background-color: #5499C7;}
+/* Cuatro columnas de ancho (240px) y tres carriles (60px)*/
+.col.span4 { width: 300px; background-color: #AF7AC5;}
+/* Seis columnas de ancho (360px) y cinco carriles (100px)*/
+.col.span6 { width: 460px; background-color: #CD6155;}
+/* Doce columnas de ancho (720px) y once carriles (220px)*/
+.col.span12 { width: 940px; background-color: #5499C7;}
