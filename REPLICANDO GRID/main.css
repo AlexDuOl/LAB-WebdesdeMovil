@@ -1,34 +1,44 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  width: 980px;
+  border: 3%;
+  width: 100%;
+/*  max-width: 1000px;*/
   margin: 0 auto;
-  padding-right: 20px;
 }
 
-.row {
+.row::before, .row::after {
+  content: "";
   clear: both;
-  margin-top: 20px;
+  display: table;
 }
 
 .col {
+  border: 3px solid white;
   float: left;
-  margin-left: 20px;
-  margin-top: 20px;
-  width: 60px;
+  min-height: 7px;
 }
 
-/* Una columna de ancho (60px) sin carril (20px) */
-.col.span1 { width: 60px; background-color: #F7DC6F;}
-/* Dos columnas de ancho (120px) y un carrile (20px)*/
-.col.span2 { width: 140px; background-color: #58D68D;}
-/* Tres columnas de ancho (180px) y dos carriles (40px)*/
-.col.span3 { width: 220px; background-color: #5499C7;}
-/* Cuatro columnas de ancho (240px) y tres carriles (60px)*/
-.col.span4 { width: 300px; background-color: #AF7AC5;}
-/* Seis columnas de ancho (360px) y cinco carriles (100px)*/
-.col.span6 { width: 460px; background-color: #CD6155;}
-/* Doce columnas de ancho (720px) y once carriles (220px)*/
-.col.span12 { width: 940px; background-color: #5499C7;}
+/* Columnas */
+/*Una columna*/
+.col.span1 { width: 8.333%; background-color: #F7DC6F;}
+/*Dos columna*/
+.col.span2 { width: 16.666%; background-color: #58D68D;}
+/*Tres columnas*/
+.col.span3 { width: 25%; background-color: #5499C7;}
+/*Cuatro columnas*/
+.col.span4 { width: 33.333%; background-color: #AF7AC5;}
+/*Seis columnas*/
+.col.span6 { width: 50%; background-color: #CD6155;}
+/*Doce columnas*/
+.col.span12 { width: 100%; background-color: #5499C7;}
+
+@media all and (max-width: 425px) and (orientation: landscape){
+  [class = "col"]{
+    width: 100%;
+  }
+}
